@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tami's website 🐳</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+
+  <body>
+    <div id="box">
+      <!-- left -->
+      <div id="left-side">
+        <img src="/img/img-01.jpg" alt="img-01" />
+        <div id="info">
+          <p id="clock"></p>
+          <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+
+        <p>
+          If you want to see my friends
+          <button id="bg-button">click here!🐋🦈🐠</button>
+        </p>
+
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- right -->
+      <div id="right-side">
+        <form id="login-form" class="hidden">
+          <input
+            type="text"
+            required
+            maxlength="15"
+            placeholder="what is your name?"
+          />
+          <button>Log In</button>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form">
+          <input type="text" placeholder="write" required />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    <!--box-->
+
+    <!-- script -->
+    <script src="/js/index.js"></script>
+    <script src="/js/todo.js"></script>
+    <script src="/js/clock.js"></script>
+    <script src="/js/bg.js"></script>
+    <script src="/js/quotes.js"></script>
+    <script src="/js/weather.js"></script>
+    <script src="/js/login.js"></script>
+  </body>
+</html>
