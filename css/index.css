@@ -7,17 +7,17 @@
 }
 @font-face {
   font-family: eskool;
-  src: url(/fonts/Eskool-Regular.ttf);
+  src: url(../fonts/Eskool-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: sweet;
-  src: url(/fonts/SweetSansProRegular.woff);
+  src: url(../fonts/SweetSansProRegular.woff);
   font-weight: 400;
 }
 @font-face {
   font-family: margaret;
-  src: url(/fonts/Margaret-Bold.otf);
+  src: url(../fonts/Margaret-Bold.otf);
 }
 * {
   margin: 0;
@@ -27,6 +27,9 @@
 }
 body {
   background-color: #ece8dd;
+}
+#bg {
+
 }
 /* basic */
 #box {
