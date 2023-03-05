@@ -7,15 +7,15 @@ function onGeoSuccess(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weather = document.querySelector("#weather span:first-child");
-      const city = document.querySelector("#weather span:last-child");
+      const city = document.querySelector("#weather span:first-child");
+      const weather = document.querySelector("#weather span:last-child");
 
-      city.innerText = data.name;
-      weather.innerText = data.main.temp;
+      city.innerText = `🏠 ${data.name}`;
+      weather.innerText = `${data.main.temp}°C`;
     });
 }
 function onGeoError() {
-  alert("Can't fint you. No weather for you");
+  alert("Can't fint you. No weather for you 😥");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);

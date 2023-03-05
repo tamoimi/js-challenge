@@ -10,7 +10,8 @@
   </head>
 
   <body>
-    <img src="./img/bg.jpg" alt="bg" id="bg">
+    <img src="./img/bg.jpg" alt="bg" id="bg" />
+
     <div id="box">
       <!-- left -->
       <div id="left-side">
@@ -20,33 +21,34 @@
           <div id="weather">
             <span></span>
             <span></span>
+          </div>
         </div>
 
-        <p>
+        <p class="introduce">
           If you want to see my friends
           <button id="bg-button">click here!🐋🦈🐠</button>
         </p>
 
-        <div id="quote">
-          <span></span>
-          <span></span>
+        <div class="login-container">
+          <form id="login-form" class="hidden">
+            <input
+              type="text"
+              required
+              maxlength="15"
+              placeholder="Please enter your ID 🦀"
+            />
+            <button>Log In</button>
+          </form>
+          <p id="greeting" class="hidden"></p>
         </div>
       </div>
 
       <!-- right -->
       <div id="right-side">
-        <form id="login-form" class="hidden">
-          <input
-            type="text"
-            required
-            maxlength="15"
-            placeholder="what is your name?"
-          />
-          <button>Log In</button>
-        </form>
-        <h1 id="greeting" class="hidden"></h1>
         <form id="todo-form">
-          <input type="text" placeholder="write" required />
+          <h4>TO DO LIST 🦦</h4>
+          <input type="text" placeholder="Please write today's to-do list 🐡" required />
+          <button>add📝</button>
         </form>
         <ul id="todo-list"></ul>
       </div>
